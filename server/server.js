@@ -5,6 +5,7 @@ const app = express();
 
 app.use('/index.css', express.static(path.join(__dirname, '../index.css')));
 app.use('/index.js', express.static(path.join(__dirname, '../index.js')));
+app.use('/poker.png', express.static(path.join(__dirname, '../poker.png')));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, "../index.html"));
